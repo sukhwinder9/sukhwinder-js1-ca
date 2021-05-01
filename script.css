@@ -1,0 +1,37 @@
+/*contact form*/
+
+#contactform {
+    padding: 2em;
+    bacround: yellow;
+    border-radius: 1rem;
+}
+
+input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    background-color: red;
+    border: none;
+    width: 180px;
+    padding: 1rem;
+    color: white;
+    margin-top: 9px;
+    cursor: pointer;
+    border: 0.2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-error {
+    display: none;
+    color: green;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
