@@ -1,14 +1,10 @@
-let users = document.querySelector(".userslist");
-
-const url = "https://jsonplaceholder.typicode.com/users";
+const users = document.querySelector(".userslist");
+const urlclass = "https://reqres.in/api/users";
 
 async function getData() {
-    users.innerHTML = `<div class="spinner-border" role="status">
-    <span class="visually-hidden">Loading...</span>
-    </div>`
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(urlclass);
         const output = await response.json();
         console.log(output);
 
@@ -20,10 +16,10 @@ async function getData() {
             console.log(listofUser[info].id);
             users.innerHTML +=
                 `
-            <div>
+            <div class="userdiv">
             <a href ="/details.html?id=${listofUser[info].id}" class="users">
             <p>ID: <strong> ${listofUser[info].id}</strong></p>
-            <p>First name: <strong> ${listofUser[info].name}</strong></p>
+            <p>First name: <strong> ${listofUser[info].first_name}</strong></p>
             <p>Email: <strong> ${listofUser[info].email}</strong></p>
             </a>
             </div>
@@ -31,7 +27,8 @@ async function getData() {
         }
     } catch (error) {
         console.log(error);
-        users.innerHTML = message("error", error);
+
+
 
     }
 }

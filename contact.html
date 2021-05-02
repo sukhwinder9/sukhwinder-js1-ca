@@ -5,41 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact page</title>
-    <link rel="stylesheet" href="script.css" />
+    <title>Contect</title>
+    <link rel="stylesheet" href=script.css ">
+
 </head>
 
 <body>
-    <main class="container">
-        <form id="contactForm">
-            <div>
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html ">home</a>
+                    
+                </li>
+                <li>
+                    <a href="/contact.html ">contact</a>
+                    
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+
+    <main>
+        <h1>Contact Form</h1>
+
+        <form id="contactForm ">
+            <div class="container ">
                 <label>
                     First name
-                    <input name="name" id="name"/>
+                    <input name="name " id="name "/>
                     </label>
-                <div class="form-error" id="firstnameerror">Please enter your first name</div>
+                <div class="form-error " id="firstnameerror "></div>
 
-            </div>
-            <div>
-                <label>
-                    Last name
-                    <input name="lastname" id="lastname"/>
+
+                <div>
+                    <label>
+                    Subject
+                    <input name="Subject " id="Subject "/>
                 </label>
-                <div class="form-error" id="lastnameError">your last name must be at least 4 character</div>
+                    <div class="form-error " id="SubjectError "></div>
 
-            </div>
-            <div>
-                <label>
-                    Email(required)
-                    <input name="email"id="email"/>
+                </div>
+                <div>
+                    <label>
+                    Email
+                    <input name="email "id="email "/>
                 </label>
-                <div class="form-error" id="emailerror">please enter a valid email address</div>
+                    <div class="form-error " id="emailerror "></div>
 
+                </div>
+                <div>
+                    <label>
+                    Address
+                    <input name="Address "id="Address "/>
+                </label>
+                    <div class="form-error " id="Addresserror "> </div>
+
+                </div>
+                <button>submit</button>
             </div>
-            <button>submit</button>
         </form>
     </main>
-    <script src="script.js"></script>
+    <script src="detail.js "></script>
+
+
+    <script src="script.js "></script>
 
 </body>
 
